@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" id="theme" href="">
+    <title>CV</title>
+</head>
+
+<body>
+   <div class="preloader-outer">
+	<div class="preloader">
+		<div class="lines">
+			<div class="dot dot-1"></div>
+			<div class="dot dot-2"></div>
+			<div class="dot dot-3"></div>
+		</div>
+		<div class="loading-text"> LOADING </div>
+	</div>
+</div>
+
+    <div class="theme">
+        <div class="theme__block">
+            <input type="radio" value="day" name="theme">
+            <p>Day</p>
+        </div>
+        <div class="theme__block">
+            <input type="radio" value="night" name="theme">
+            <p>Night</p>
+        </div>
+    </div>
+
+
+    <div class="sidebar">
+        <img src="photo_2023-11-27_13-24-21.jpg" alt="Profile Image">
+        <div class="btn_wrap">
+            <span>Pronina Kate</span>
+            <div class="container">
+                066 360 8756
+            </div>
+        </div>
+        <a href="#about" onclick="showContent('about')">About me</a>
+        <a href="#education" onclick="showContent('education')">Education</a>
+        <a href="#skills" onclick="showContent('skills')">Skills</a>
+        <a href="#feetback" onclick="showContent('feetback')">Your feedback</a>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/kate.pronina.75" class="social-icon"><img src="icons8-facebook-50.png"
+                    alt="Facebook"></a>
+            <a href="https://instagram.com/_.katrine._v_?igshid=OGQ5ZDc2ODk2ZA==" class="social-icon"><img
+                    src="icons8-instagram-50.png" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <section id="about" class="about">
+            <h2>About me</h2>
+            <p><strong>Name:</strong> Pronina Kate</p>
+            <p><strong>Location:</strong> Kyiv, Ukraine</p>
+            <p><strong>Email: </strong><a href="mailto:ketrinpronina@gmail.com">ketrinpronina@gmail.com </a></p>
+            <p><strong>Phone:</strong> +380 (66) 360 87 56 </p>
+        </section>
+
+
+        <section id="education" class="education">
+            <h3>Education</h3>
+            <div class="skill">
+                <div class="skill-name">Secondary education in school</div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Higher education in Igor Sikorsky Kyiv Polytechnic Institute</div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 38%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="timeline">
+            <div class="timeline-block" data-index="1">
+                <div class="timeline-header">
+                    <h3 class="timeline-title">Secondary education</h3>
+                    <p class="timeline-date">2011-2022</p>
+                </div>
+                <div class="timeline-content">
+                    Graduated from the mathemaytics and science school with a medal.
+                </div>
+            </div>
+            <div class="timeline-block" data-index="2">
+                <div class="timeline-header">
+                    <h3 class="timeline-title">Higher education</h3>
+                    <p class="timeline-date">2022-today</p>
+                </div>
+                <div class="timeline-content">
+                    Studying cyber security at Igor Sikorsky Kyiv Polytechnic Institute.
+                </div>
+            </div>
+        </div>
+
+        <div class="skills" id="skills">
+            <h3>Skills</h3>
+            <div class="columns-container">
+                <div class="column" id="professional-skills">
+                    <h4>Professional Skills</h4>
+                    <ul id="professional-skills-list"></ul>
+                </div>
+                <div class="column" id="personal-skills">
+                    <h4>Personal Skills</h4>
+                    <ul id="personal-skills-list"></ul>
+                </div>
+            </div>
+        </div>
+
+        <footer id="feetback">
+            <form id="feedbackForm" onsubmit="submitForm(); return false;">
+                <h3>Leave your feedback about this web-site</h3>
+                <div class="wrapper__input">
+                    <span>Name</span>
+                    <input type="text" id = "nameInput" placeholder="Name">
+                </div>
+                <div class="wrapper__input">
+                    <span>Your feedback</span>
+                    <input type="text" id = "feedbackInput" placeholder="Your feedback">
+                </div>
+                <button> Thanks!</button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="./js/theme.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
